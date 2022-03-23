@@ -1,0 +1,44 @@
+#top-leftbar{
+    background-color: #fd825c;
+    grid-area: top-leftbar;
+}
+#top-rightbar{
+    background-color: #fc6057;
+    grid-area: top-rightbar;
+}
+#sidebar{
+    background-color: #01a787 ;
+    grid-area: sidebar;
+}
+#mainbar{
+    background-color: #1bc1a1;
+    grid-area: mainbar;
+}
+#footer{
+    background-color: #fda061 ;
+    grid-area: footer;
+}
+
+.CIS{
+    display: grid;
+    padding: 10px;
+    background-color: #2e3143;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .6fr 1fr .2fr;
+    grid-template-areas: "top-leftbar top-leftbar top-rightbar top-rightbar" "sidebar mainbar mainbar mainbar" "footer footer footer footer";
+    height: 50vh;
+    gap: 10px;
+    text-align: center;
+}
+@media only screen and (max-width:550px){
+    .CIS {grid-template-columns: 1fr;
+       grid-template-rows: .6fr .6fr .6fr .6fr .6fr;
+   grid-template-areas:
+   "top-leftbar"
+   "top-rightbar"
+   "sidebar"
+   "mainbar"
+   "footer";
+   
+   }   
+   }
